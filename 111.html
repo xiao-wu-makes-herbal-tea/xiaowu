@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>晨晓维</title>
+	<style type="text/css">
+		body{margin: 0;padding: 0}
+		.left{width:6.6%;height: 735px;float: left;background: blue}
+		.right{width:93.4%;height: 735px;float: right;background: #fff }
+		.lunbo{width: 93.4%;height: 480px;float: right;background: #000}
+		#denglu{width: 120px;height: 32px;background: #ccc;margin: 0 auto; font-size: 16px; float: right;}
+		.ji{font-size: 20px}
+	</style>
+	<script type="text/javascript" src="111.css/vue.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/style1.css" />
+	<link rel="shortcut icon" href="111.css/logo.ico">
+
+
+</head>
+<body>
+
+<div class="lunbo" style="background: black">
+	<div id="imageShow">
+	<div id="imgshow_mask"></div>
+	<ul class="imagebg" id="imagebg">
+		<li data-sPic="imglunbo/8.8.jpg">
+			<a href="相册/index.html" class="bannerbg_main" style="background:url(imglunbo/8.jpg) 50% 50% no-repeat;" ></a>
+		</li>
+		<li data-sPic="imglunbo/9.9.jpg">
+			<a href="相册/index.html" class="bannerbg_main" style="background:url(imglunbo/9.jpg) 50% 50% no-repeat;" ></a>
+		</li>
+		<li data-sPic="imglunbo/index_newlogo_s.jpg">
+			<a href="相册/index.html" class="bannerbg_main" style="background:url(imglunbo/index_newlogo.jpg) 50% 50% no-repeat;" ></a>
+		</li>
+		<li data-sPic="imglunbo/index_iPad2.0_s.jpg">
+			<a href="相册/index.html" class="bannerbg_main" style="background:url(imglunbo/index_iPad2.0.jpg) 50% 50% no-repeat;" ></a>
+		</li>
+		<li data-sPic="imglunbo/index_hundred_million_s.jpg">
+			<a href="相册/index.html" class="bannerbg_main" style="background:url(imglunbo/index_hundred_million.jpg) 50% 50% no-repeat;" ></a>
+		</li>
+		<li data-sPic="imglunbo/index_idg_s.jpg" id="jiami">
+			<a href="相册/index.html" class="bannerbg_main" style="background:url(imglunbo/index_idg.jpg) 50% 50% no-repeat;" ></a>
+		</li>
+		<li data-sPic="imglunbo/index_callmaster5.0_s.jpg">
+			<a href="相册/index.html" class="bannerbg_main" style="background:url(imglunbo/index_callmaster5.0.jpg) 50% 50% no-repeat;" ></a>
+		</li>
+		<li data-sPic="imglunbo/banner_home_1_s.jpg">
+			<a href="相册/index.html" class="bannerbg_main" style="background:url(imglunbo/banner_home_1.jpg) 50% 50% no-repeat;" ></a>
+		</li>
+		<li data-sPic="imglunbo/banner_home_3_s.jpg" style="background:#a9a9a9 url(imglunbo/banner_home_3.jpg) center no-repeat;">
+			<a href="相册/index.html" class="bannerbg_main" style="background:url(imglunbo/banner_home_3.jpg) 50% 50% no-repeat;" ></a>
+		</li>
+	</ul>
+	
+	<div class="scrollbg">
+		<div class="scroll">
+			<a id="left_img_btn" class="s_pre" href="javascript:void(0)"></a>
+			<div class="current" id="current"></div>
+			<div class="outScroll_pic">
+				<ul class="scroll_pic cls" id="small_pic"></ul>
+			</div>
+			<a id="right_img_btn" class="s_next" href="javascript:void(0)"></a>
+		</div>
+	</div>
+	
+</div>
+
+
+<script type="text/javascript" src="js/imgSlider.js"></script>
+<script type="text/javascript">
+img.init();
+img.play(0);
+//阻止事件冒泡
+function estop(e){
+	var e=arguments.callee.caller.arguments[0]||event;
+	if (e && e.stopPropagation){
+	//因此它支持W3C的stopPropagation()方法
+	   e.stopPropagation();
+	}else{
+	//否则，我们需要使用IE的方式来取消事件冒泡
+	   window.event.cancelBubble = true;
+	   return false;
+	}
+}
+</script>	
+</div>
+<div class="left">
+		<div class="nav-main">
+	<div class="nav-box">
+	<div class="nav">
+  <ul class="nav-ul">
+  	<li><a href="111.html" class="home"><span>首页</span></a></li>
+  	<li><a href="#" class="develop"><span>页面选择</span></a></li>
+  	<li><a href="#" class="wechat"><span>最美记忆</span></a></li>
+  	<li><a href="#" class="case"><span>青春年华</span></a></li>
+  	<li><a href="#" class="news"><span>登录注册</span></a></li>
+  	<li><a href="danmu/demo.html" class="contact"><span>留言评论</span></a></li>
+  </ul>
+	</div>
+	<div class="nav-slide">
+    <div class="nav-slide-o"></div>
+    <div class="nav-slide-o">
+    	<ul>
+    		<li><a href="index.html" target="_blank"><span>进入页面</span></a></li>
+    		<li><a href="love.html" target="_blank"><span>计时页面</span></a></li>
+    		<li><a href="ali.htm" target="_blank"><span>阿狸页面</span></a></li>
+    		<li><a href="fishgame/index.html" target="_blank"><span>游戏： 捕鱼达人</span></a></li>
+    		<li><a href="kaisuogame/index.html" target="_blank"><span>游戏： 找钥匙开门</span></a></li>
+    		<li><a href="qiqiugame/demo.html" target="_blank"><span>游戏： 气球大作战</span></a></li>
+    		<li><a href="game/game.html" target="_blank"><span>游戏：一个都不能死</span></a></li>
+
+    	</ul>
+    </div>
+    <div class="nav-slide-o">
+    	<ul>
+    		<li><a  href="相册/index.html" id="aaa"><span>时光相册</span></a></li>
+    		<li><a href="视频/index.html" id="bbb"><span>视频回忆</span></a></li>
+    		<li><a href="#" id="ccc"><span> </span></a></li>
+    		<li><a href="纪念日/index.html" id="ddd"><span>纪念日</span></a></li>
+    	</ul>
+    </div>
+    <div class="nav-slide-o">
+    	<ul>
+    		<li><a href="#" id="eee"><span>我的小维维</span></a></li>
+    		<li><a href="#" id="fff"><span>你的小晨晨</span></a></li>
+    		<li><a href="#" id="ggg"><span>网站设计</span></a></li>
+    	</ul>
+    </div>
+    <div class="nav-slide-o">
+    	<ul>
+    		<li><a href="denglu/index.html"><span>登录</span></a></li>
+    		<li><a href="denglu/register.html"><span>注册</span></a></li>
+    	</ul>
+    </div>
+	</div>
+	</div>
+	</div>
+
+
+
+	<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript">
+	$(function(){
+	var thisTime;
+	$('.nav-ul li').mouseleave(function(even){
+			thisTime	=	setTimeout(thisMouseOut,1000);
+
+	})
+
+	$('.nav-ul li').mouseenter(function(){
+		clearTimeout(thisTime);
+		var thisUB	=	$('.nav-ul li').index($(this));
+		if($.trim($('.nav-slide-o').eq(thisUB).html()) != "")
+		{
+			$('.nav-slide').addClass('hover');
+			$('.nav-slide-o').hide();
+			$('.nav-slide-o').eq(thisUB).show();
+		}
+		else{
+			$('.nav-slide').removeClass('hover');
+		}
+		
+	})
+	
+	function thisMouseOut(){
+		$('.nav-slide').removeClass('hover');
+	}
+	 
+	$('.nav-slide').mouseenter(function(){
+		clearTimeout(thisTime);
+		$('.nav-slide').addClass('hover');
+	})
+	$('.nav-slide').mouseleave(function(){
+		$('.nav-slide').removeClass('hover');
+	})
+
+	})
+	</script>
+</div>
+<div class="right">
+	    <div id="denglu">
+	    <span>&emsp;</span>
+        <a href="denglu/index.html" id="q">登录</a>
+		<a href="denglu/register.html">&emsp;注册</a>
+        </div>
+	
+</div>
+		<script type="text/javascript">
+			//var a = document.getElementById("q").innerHTML;
+			//var b = "登录"；
+			if(document.getElementById("q").innerHTML=="登"){
+			document.getElementById("aaa").setAttribute("href","zhuce.html"); 
+			document.getElementById("bbb").setAttribute("href","zhuce.html");
+			document.getElementById("ccc").setAttribute("href","zhuce.html");
+			document.getElementById("ddd").setAttribute("href","zhuce.html");
+			document.getElementById("eee").setAttribute("href","zhuce.html");
+			document.getElementById("fff").setAttribute("href","zhuce.html");
+			document.getElementById("ggg").setAttribute("href","zhuce.html");
+		}
+
+		</script>
+
+</body>
+</html>

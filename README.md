@@ -1,52 +1,8 @@
-# lifeRestart
-
-![Discord](https://img.shields.io/discord/883382868427014255?color=%23FEE75C&label=Discord&logo=discord&logoColor=white&style=for-the-badge)
-
-English | [简体中文](./README-zh_CN.md)
-
-## Introduction
-
-- Game Life Restart
-
-## Usage
-
-1. Clone project code.
-
-```bash
-git clone git@github.com:VickScarlet/lifeRestart.git my-project
-cd my-project
-```
-
-2. Installation dependence.
-
-```bash
-yarn install
-```
-
-Or
-
-```bash
-npm install
-```
-
-3. Start local server.
-
-```bash
-yarn dev
-```
-
-Or
-
-```bash
-npm run dev
-```
-
-4. Command Line version
-
-```bash
-node repl
-```
-
-5. After the startup is complete, will automatically open a browser and visit [http://localhost:8081/view/index.html](http://localhost:8081/view/index.html).
-
-> More instructions at [documentation](https://liferestart.syaro.io/)。
+# liuchen
+爱情表白纪念  
+第一次提交github边学git边做作品   
+里面用了一些模板，刚学的前端，代码写的比较乱，里面好多多余的代码，见谅 !!!    
+此项目分了好几个模块，每块内容不同！                
+项目未完成！！！                 
+预览网址：www.chenxiaowei.xyz       
+网站第一次访问可能加载过慢，请耐心等待！     
